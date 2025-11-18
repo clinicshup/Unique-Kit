@@ -84,6 +84,81 @@ export const MOCK_ITEMS: Item[] = [
     ].sort((a,b) => b.amount - a.amount),
     status: 'sold',
   },
+  {
+    id: 'item-5',
+    name: '1920s Underwood Typewriter',
+    images: ['https://picsum.photos/seed/typewriter/800/600'],
+    seller: {
+        name: 'Wordsmiths Vintage',
+        contactInfo: 'seller5@example.com',
+    },
+    description: 'A pristine working condition Underwood No. 5. The standard of the industry for decades, this machine has written history.',
+    itemDate: '1923',
+    itemAge: 101,
+    startingBid: 450,
+    bids: [],
+    status: 'active'
+  },
+  {
+    id: 'item-6',
+    name: 'Edo Period Katana',
+    images: ['https://picsum.photos/seed/katana/800/600'],
+    seller: {
+        name: 'Kyoto Blades',
+        contactInfo: 'seller6@example.com',
+    },
+    description: 'Authentic Samurai sword with distinct hamon line. Includes certificate of authenticity from the NBTHK.',
+    itemDate: 'c. 1750',
+    itemAge: 274,
+    startingBid: 3200,
+    bids: [],
+    status: 'active'
+  },
+  {
+    id: 'item-7',
+    name: 'Victorian Pocket Watch',
+    images: ['https://picsum.photos/seed/pocketwatch/800/600'],
+    seller: {
+        name: 'Time Travelers',
+        contactInfo: 'seller7@example.com',
+    },
+    description: 'Gold-plated Waltham pocket watch with intricate floral engraving. Keeps excellent time.',
+    itemDate: '1885',
+    itemAge: 139,
+    startingBid: 800,
+    bids: [],
+    status: 'active'
+  },
+  {
+    id: 'item-8',
+    name: 'Apollo 11 Mission Patch',
+    images: ['https://picsum.photos/seed/apollo/800/600'],
+    seller: {
+        name: 'Space History Co.',
+        contactInfo: 'seller8@example.com',
+    },
+    description: 'Original embroidered patch from the historic 1969 moon landing mission. Framed with commemorative plaque.',
+    itemDate: '1969',
+    itemAge: 55,
+    startingBid: 2000,
+    bids: [],
+    status: 'active'
+  },
+  {
+    id: 'item-9',
+    name: 'Fossilized Megalodon Tooth',
+    images: ['https://picsum.photos/seed/sharktooth/800/600'],
+    seller: {
+        name: 'Prehistoric Finds',
+        contactInfo: 'seller9@example.com',
+    },
+    description: 'A massive 6-inch serrated tooth from the prehistoric megalodon shark. Found off the coast of North Carolina.',
+    itemDate: 'c. 3.6 MYA',
+    itemAge: 3600000,
+    startingBid: 600,
+    bids: [],
+    status: 'active'
+  }
 ];
 
 export const MOCK_ADS: Ad[] = Array.from({ length: 12 }, (_, i) => ({
