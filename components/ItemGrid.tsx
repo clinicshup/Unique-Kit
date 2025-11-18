@@ -12,11 +12,13 @@ const ItemCard: React.FC<ItemCardProps> = ({ item, onSelect }) => {
 
     return (
         <div 
-            className="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 cursor-pointer group"
+            className="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 cursor-pointer group relative"
             onClick={() => onSelect(item.id)}
         >
             <div className="relative">
                 <img src={item.images[0]} alt={item.name} className="w-full h-56 object-cover" />
+                
+                {/* Status Badge */}
                 <div className={`absolute top-0 right-0 m-2 px-2 py-1 text-xs font-bold text-white rounded ${item.status === 'active' ? 'bg-green-500' : 'bg-red-500'}`}>
                     {item.status.toUpperCase()}
                 </div>
